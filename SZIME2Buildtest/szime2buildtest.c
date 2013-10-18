@@ -376,7 +376,7 @@ GPIO_write(Board_GSM_ONOFF,Board_PIN_ON);
 Task_sleep(1000);
 
 while (TRUE) {
-	db=UART_read(uart6, inputbuf, 110);
+	db=UART_read(uart3, inputbuf, 110);
 	if (db==0)
 	{
 	// Ha nem olvas akkor kapcsolgatni kelll
